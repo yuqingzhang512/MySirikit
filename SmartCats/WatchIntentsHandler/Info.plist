@@ -32,6 +32,7 @@
 			<array>
 				<string>INSendMessageIntent</string>
 				<string>RecordTimeIntent</string>
+				<string>INCreateNoteIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
