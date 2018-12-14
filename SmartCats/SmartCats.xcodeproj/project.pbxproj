@@ -33,6 +33,7 @@
 		59D7EA2921C10A4B00A1F965 /* RecordTimeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EA2821C10A4B00A1F965 /* RecordTimeIntentHandler.swift */; };
 		59D7EA2A21C10A4B00A1F965 /* RecordTimeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EA2821C10A4B00A1F965 /* RecordTimeIntentHandler.swift */; };
 		59D7EA2B21C10BF800A1F965 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EA2521C1094F00A1F965 /* Intents.intentdefinition */; };
+		59D7EA2D21C3832E00A1F965 /* ZASpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EA2C21C3832E00A1F965 /* ZASpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		59D7EA1A21C0FEDF00A1F965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D7EA2521C1094F00A1F965 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		59D7EA2821C10A4B00A1F965 /* RecordTimeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTimeIntentHandler.swift; sourceTree = "<group>"; };
+		59D7EA2C21C3832E00A1F965 /* ZASpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZASpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				59D7E9C921C0F28800A1F965 /* Assets.xcassets */,
 				59D7E9CB21C0F28800A1F965 /* LaunchScreen.storyboard */,
 				59D7E9CE21C0F28800A1F965 /* Info.plist */,
+				59D7EA2C21C3832E00A1F965 /* ZASpeechRecognizer.swift */,
 			);
 			path = SmartCats;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			files = (
 				59D7EA2B21C10BF800A1F965 /* Intents.intentdefinition in Sources */,
 				59D7E9C521C0F28600A1F965 /* ViewController.swift in Sources */,
+				59D7EA2D21C3832E00A1F965 /* ZASpeechRecognizer.swift in Sources */,
 				59D7E9C321C0F28600A1F965 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
