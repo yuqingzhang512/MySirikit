@@ -11,7 +11,7 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -28,4 +28,9 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func startBtnClicked() {
+        print("Start")
+    }
+    
+    
 }

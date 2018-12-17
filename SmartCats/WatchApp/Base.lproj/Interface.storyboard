@@ -14,7 +14,12 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="SmartCats" id="UWJ-eU-QZ6"/>
+                        <label width="136" height="97" alignment="left" text="Listerning..." textAlignment="left" numberOfLines="10" id="UWJ-eU-QZ6"/>
+                        <button width="1" alignment="left" title="Button" id="N3q-wM-fvd">
+                            <connections>
+                                <action selector="startBtnClicked" destination="AgC-eL-Hgc" id="q4O-G3-5Oo"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
