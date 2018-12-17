@@ -15,12 +15,16 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
                     <items>
                         <label width="136" height="97" alignment="left" text="Listerning..." textAlignment="left" numberOfLines="10" id="UWJ-eU-QZ6"/>
-                        <button width="1" alignment="left" title="Button" id="N3q-wM-fvd">
+                        <button width="1" alignment="left" title="Start" id="N3q-wM-fvd">
                             <connections>
                                 <action selector="startBtnClicked" destination="AgC-eL-Hgc" id="q4O-G3-5Oo"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="startBtn" destination="N3q-wM-fvd" id="MXG-N4-Jpi"/>
+                        <outlet property="textLabel" destination="UWJ-eU-QZ6" id="AsI-Ct-RFh"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

@@ -8,6 +8,7 @@
 
 import UIKit
 import Intents
+import AVFoundation
 
 class ViewController: UIViewController, ZASpeechRecognizerDelegate {
     
@@ -16,6 +17,7 @@ class ViewController: UIViewController, ZASpeechRecognizerDelegate {
     
     var speechRecognizer: ZASpeechRecognizer!
     var isRecording = false
+    let speechSynthesizer = AVSpeechSynthesizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +78,9 @@ class ViewController: UIViewController, ZASpeechRecognizerDelegate {
     func speechRecognitionDidFinish(text: String) {
         self.textView.text = text
         print("Finish :\(text)")
+        let speechUtterance = AVSpeechUtterance(string: text)
+        
+        speechSynthesizer.speak(speechUtterance)
     }
     
     func speechRecognitionNotAuthorized() {
