@@ -31,7 +31,7 @@ class InterfaceController: WKInterfaceController {
     override func didAppear() {
         super.didAppear()
         
-        startBtnClicked()
+//        startBtnClicked()
     }
     
     override func didDeactivate() {
@@ -39,6 +39,18 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func recordBtnClicked() {
+        let url = FileManager().containerURL(forSecurityApplicationGroupIdentifier: "group.com.sap.smb.ilab")?.appendingPathComponent("recording.m4a")
+        guard let fileUrl = url else {
+            return
+        }
+        self.presentAudioRecorderController(withOutputURL: fileUrl, preset: .wideBandSpeech, options: nil) { (didSave, error) in
+            if (didSave) {
+                print("Save Recording success");
+            }
+        }
+    }
+    
     @IBAction func startBtnClicked() {
         
         self.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { (results) in

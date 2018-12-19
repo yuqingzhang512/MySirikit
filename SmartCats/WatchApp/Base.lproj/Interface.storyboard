@@ -20,6 +20,11 @@
                                 <action selector="startBtnClicked" destination="AgC-eL-Hgc" id="q4O-G3-5Oo"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Record" id="Ddg-Mu-1SA">
+                            <connections>
+                                <action selector="recordBtnClicked" destination="AgC-eL-Hgc" id="hM2-nh-eRh"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="startBtn" destination="N3q-wM-fvd" id="MXG-N4-Jpi"/>

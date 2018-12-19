@@ -146,6 +146,7 @@
 		59D7EA2521C1094F00A1F965 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		59D7EA2821C10A4B00A1F965 /* RecordTimeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTimeIntentHandler.swift; sourceTree = "<group>"; };
 		59D7EA2C21C3832E00A1F965 /* ZASpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZASpeechRecognizer.swift; sourceTree = "<group>"; };
+		59D7EA3321CA271900A1F965 /* WatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +236,7 @@
 		59D7E9EC21C0FE9800A1F965 /* WatchApp */ = {
 			isa = PBXGroup;
 			children = (
+				59D7EA3321CA271900A1F965 /* WatchApp.entitlements */,
 				59D7E9ED21C0FE9800A1F965 /* Interface.storyboard */,
 				59D7E9F021C0FE9A00A1F965 /* Assets.xcassets */,
 				59D7E9F221C0FE9A00A1F965 /* Info.plist */,
@@ -372,6 +374,9 @@
 					59D7E9BE21C0F28600A1F965 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
 							com.apple.Siri = {
 								enabled = 1;
 							};
@@ -382,10 +387,18 @@
 					};
 					59D7E9EA21C0FE9800A1F965 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					59D7E9F621C0FE9A00A1F965 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Siri = {
 								enabled = 1;
 							};
@@ -806,6 +819,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchApp/WatchApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D38394224C;
 				IBSC_MODULE = WatchApp_Extension;
@@ -825,6 +839,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchApp/WatchApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D38394224C;
 				IBSC_MODULE = WatchApp_Extension;
